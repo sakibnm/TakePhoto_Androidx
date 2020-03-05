@@ -106,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void setPic() {
         // Get the dimensions of the View
-        int targetW = 640;
-        int targetH = 480;
+        int targetW = imageView.getMaxWidth();
+        int targetH = imageView.getMaxHeight();
 
         // Get the dimensions of the bitmap
         BitmapFactory.Options bmOptions = new BitmapFactory.Options();
